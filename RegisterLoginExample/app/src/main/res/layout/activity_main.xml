@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    tools:context="com.example.registerloginexample.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/tmap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_gps"
+        android:layout_width="362dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:text="내 위치 표시하기"
+        map:layout_constraintBottom_toBottomOf="@+id/tmap"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_obj"
+        android:layout_width="362dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        android:text="동적 객체 표시하기"
+        map:layout_constraintBottom_toTopOf="@+id/btn_gps"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
